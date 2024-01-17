@@ -31,6 +31,7 @@ const swiper = new Swiper(".swiper", {
   //     spaceBetween: 30
   //   },
   // }
+  // brealpoint
   breakpoints: {
     0: {
       slidesPerView: 1,
