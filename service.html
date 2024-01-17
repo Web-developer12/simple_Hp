@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Service</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/common.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/service.css'>
+    <!-- add noto sans font damily -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Zen+Antique&display=swap"
+        rel="stylesheet">
+
+    <!-- add online bootstrap and jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src='main.js'></script> -->
+
+    <!-- slide -->
+    <!-- Styles -->
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <section id="navbar" class="nav container shadow_box ">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./assets/img/common/Logo.svg" alt="logo" class="logo">
+                </a>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="./index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="./service.html">サービス</a>
+                    </li>
+                    <li>
+                        <a href="./company.html">会社紹介</a>
+                    </li>
+                    <li>
+                        <a href="./buildingList.html">物件一覧</a>
+                    </li>
+                    <button class="blue_btn nav_btn">
+                        <a href="./contact.html">お問い合わせ</a>
+                    </button>
+                </ul>
+            </div>
+            <!-- humburger button -->
+            <span style="font-size:30px;cursor:pointer" id="ham_btn" onclick="openNav()">&#9776;</span>
+            <!-- sp navbar -->
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <div class="topic">
+                        <div class="open">
+                            <h2>
+                                <a href="./index.html">HOME</a>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="open">
+                            <a href="./service.html">サービス</a>
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="open">
+                            <a href="./company.html">会社紹介</a>
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="open">
+                            <a href="./buildingList.html">物件一覧</a>
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="open">
+                            <a href="./contact.html">お問い合わせ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fv container">
+            <h3>
+                モノを作ることが我々の使命だ。
+            </h3>
+            <h4>タイトル</h4>
+            <h6>テキストテキストテキストテキスト</h6>
+        </section>
+
+    </header>
+
+    <main>
+
+        <section class="rec container">
+            <h4>私たちの評判</h4>
+            <div>
+                <div class="rec_cell">
+                    <img src="./assets/img/service/receiverIcon.svg" alt="reciever">
+                    <h5>最高のサービス</h5>
+                    <p>
+                        現在お住まいのマンション・家を販売したい、
+                        相続等で手放したい物件がある等様々な事情に
+                        あわせた売却のお手伝いをいたします。販売費
+                        用の他、相続・税金など総合的にご提案致しま
+                        すのでお気軽にお問い合わせください。
+                    </p>
+                </div>
+                <div class="rec_cell">
+                    <img src="./assets/img/service/receiverIcon.svg" alt="reciever">
+                    <h5>最高のサービス</h5>
+                    <p>
+                        現在お住まいのマンション・家を販売したい、
+                        相続等で手放したい物件がある等様々な事情に
+                        あわせた売却のお手伝いをいたします。販売費
+                        用の他、相続・税金など総合的にご提案致しま
+                        すのでお気軽にお問い合わせください。
+                    </p>
+                </div>
+                <div class="rec_cell">
+                    <img src="./assets/img/service/receiverIcon.svg" alt="reciever">
+                    <h5>最高のサービス</h5>
+                    <p>
+                        現在お住まいのマンション・家を販売したい、
+                        相続等で手放したい物件がある等様々な事情に
+                        あわせた売却のお手伝いをいたします。販売費
+                        用の他、相続・税金など総合的にご提案致しま
+                        すのでお気軽にお問い合わせください。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pop container">
+            <h4 class="container2">Popular</h4>
+            <div class="pop_top container2">
+                <h4>人気のレジデンス</h4>
+                <div class="pop_link">
+                    <h6>すべて見る</h6>
+                    <img src="./assets/img/service/arrowIcon.svg" alt="arrowIcon">
+                </div>
+            </div>
+            <div class="pop_grp">
+                <div class="pop_cell shadow_box">
+                    <img src="./assets/img/service/popularImg1.png" alt="building">
+                    <div class="pop_cell_location">
+                        <img src="./assets/img/service/locationIcon (1).svg" alt="locationIcon">
+                        <h6>パークコート麻布十番ザ・タワー</h6>
+                    </div>
+                    <div class="icon_grp">
+                        <img src="./assets/img/service/bedIcon.svg" alt="bedIcon" class="bedIcon">
+                        <p>4 ベッド</p>
+                        <img src="./assets/img/service/squareIcon.svg" alt="squareIcon" class="squareIcon">
+                        <p>10x10</p>
+                        <img src="./assets/img/service/squareIcon.svg" alt="squareIcon" class="squareIcon">
+                        <p>2000m<sup>2</sup></p>
+                    </div>
+                    <div class="btn_pan">
+                        <a href="./contact.html">
+                            <button class="blue_btn">
+                                今すぐ購入
+                            </button>
+                        </a>
+                        <h6>750,000.00円</h6>
+                    </div>
+                </div>
+                <div class="pop_cell shadow_box">
+                    <img src="./assets/img/service/popularImg2.png" alt="building">
+                    <div class="pop_cell_location">
+                        <img src="./assets/img/service/locationIcon (1).svg" alt="locationIcon">
+                        <h6>パークコート麻布十番ザ・タワー</h6>
+                    </div>
+                    <div class="icon_grp">
+                        <img src="./assets/img/service/bedIcon.svg" alt="bedIcon">
+                        <p>4 ベッド</p>
+                        <img src="./assets/img/service/squareIcon.svg" alt="squareIcon">
+                        <p>10x10</p>
+                        <img src="./assets/img/service/squareIcon.svg" alt="squareIcon">
+                        <p>2000m<sup>2</sup></p>
+                    </div>
+                    <div class="btn_pan">
+                        <a href="./contact.html">
+                            <button class="blue_btn">
+                                今すぐ購入
+                            </button>
+                        </a>
+                        <h6>750,000.00円</h6>
+                    </div>
+                </div>
+                <div class="pop_cell shadow_box">
+                    <img src="./assets/img/service/popularImg3.png" alt="building">
+                    <div class="pop_cell_location">
+                        <img src="./assets/img/service/locationIcon (1).svg" alt="locationIcon">
+                        <h6>パークコート麻布十番ザ・タワー</h6>
+                    </div>
+                    <div class="icon_grp">
+                        <img src="./assets/img/service/bedIcon.svg" alt="bedIcon">
+                        <p>4 ベッド</p>
+                        <img src="./assets/img/service/squareIcon.svg" alt="squareIcon">
+                        <p>10x10</p>
+                        <img src="./assets/img/service/squareIcon.svg" alt="squareIcon">
+                        <p>2000m<sup>2</sup></p>
+                    </div>
+                    <div class="btn_pan">
+                        <a href="./contact.html">
+                            <button class="blue_btn">
+                                今すぐ購入
+                            </button>
+                        </a>
+                        <h6>750,000.00円</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="color_grp">
+                <div class="color_cell yellow_pan">
+                    <div class="">
+                        <img src="./assets/img/service/vector1.svg" alt="vector1">
+                        <h5>経験豊富</h5>
+                    </div>
+                    <p>
+                        テキストテキストテキストテキストテキスト<br>
+                        テキストテキストテキストテキストテキスト
+                    </p>
+                </div>
+                <div class="color_cell green_pan">
+                    <div class="">
+                        <img src="./assets/img/service/vector2.svg" alt="vector">
+                        <h5>競争価格</h5>
+                    </div>
+                    <p>
+                        テキストテキストテキストテキストテキスト <br>
+                        テキストテキストテキストテキストテキスト
+                    </p>
+                </div>
+            </div>
+            <div class="color_grp">
+                <div class="color_cell cyan_pan">
+                    <div class="">
+                        <img src="./assets/img/service/vector3.svg" alt="vector1">
+                        <h5>オンタイム</h5>
+                    </div>
+                    <p>
+                        テキストテキストテキストテキストテキスト <br>
+                        テキストテキストテキストテキストテキスト
+                    </p>
+                </div>
+                <div class="color_cell pink_pan">
+                    <div class="">
+                        <img src="./assets/img/service/vector3 (1).svg" alt="vector1">
+                        <h5>最高の品質</h5>
+                    </div>
+                    <p>
+                        テキストテキストテキストテキストテキスト <br>
+                        テキストテキストテキストテキストテキスト
+                    </p>
+                </div>
+            </div> -->
+            <h3 class="other_ttl">Other Projects</h3>
+        </section>
+
+        <section class="swiper-body">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide1">
+                    </div>
+                    <div class="swiper-slide swiper-slide2">
+                    </div>
+                    <div class="swiper-slide swiper-slide3">
+                    </div>
+                </div>
+
+                <div class="pagination"></div>
+
+                <div class="prev">
+                    <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.2625 13.2375L3.5375 7.5L9.2625 1.7625L7.5 0L0 7.5L7.5 15L9.2625 13.2375Z"
+                            fill="#A99260" />
+                    </svg>
+
+                </div>
+                <div class="next">
+                    <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.737305 13.2375L6.4623 7.5L0.737305 1.7625L2.4998 0L9.9998 7.5L2.4998 15L0.737305 13.2375Z"
+                            fill="#A99260" />
+                    </svg>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contactus container">
+            <div class="contactus_txt">
+                <h6>
+                    不動産取引は非常に高額なものであり、ほとんどの方にとって関わることは多くありません。<br>
+                    不動産を売りたい、買いたい、借りたいどれをとっても同じ物件はございません。同じようにその人の想い、背景もそれぞれ異なります。
+                </h6>
+            </div>
+            <div class="contactus_info">
+                <div>
+                    <img src="./assets/img/company/call-calling.svg" alt="call-calling">
+                    <h5>025-777-3067</h5>
+                </div>
+                <div>
+                    <img src="./assets/img/company/mail.svg" alt="mailaddress">
+                    <h5>admin@thehomeverse.io</h5>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <section id="navbar" class="footer_nav container">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./assets/img/common/Logo.svg" alt="logo" class="logo">
+                </a>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="./index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="./service.html">サービス</a>
+                    </li>
+                    <li>
+                        <a href="./company.html">会社紹介</a>
+                    </li>
+                    <li>
+                        <a href="./buildingList.html">物件一覧</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="link container">
+            <div class="social">
+                <p>
+                    不動産を売りたい、買いたい、借りたいどれをとっても同じ物件はございません。
+                    同じようにその人の想い、背景もそれぞれ異なります。
+                    インターネットやAI等の普及により人と人との距離が離れつつある現代だからこそ私たちはお客様1人1人のご縁に感謝し、
+                    不動産だけではなく人生のパートナーとしての不動産屋を目指します。
+                </p>
+                <div class="social_link">
+                    <img src="./assets/img/buildingList/twitter.svg" alt="twitter" class="twitter">
+                    <img src="./assets/img/buildingList/instegram.svg" alt="instagram" class="instagram">
+                    <img src="./assets/img/buildingList/facebook.svg" alt="facebook" class="facebook">
+                    <img src="./assets/img/buildingList/youtube.svg" alt="youtube" class="youtube">
+                </div>
+            </div>
+            <div class="contact">
+                <div class="contact_cell">
+                    <img src="./assets/img/buildingList/phonIcon.svg" alt="phoneIcon">
+                    <h6>+123 454564446</h6>
+                </div>
+                <div class="contact_cell">
+                    <img src="./assets/img/buildingList/messageIcon.svg" alt="phoneIcon">
+                    <h6>aaaaa@aaaa.com</h6>
+                </div>
+                <div class="contact_cell">
+                    <img src="./assets/img/buildingList/locationIcon.svg" alt="phoneIcon">
+                    <h6>神奈川県川崎市川崎区京町1丁目3-10千代田ビル102号室</h6>
+                </div>
+            </div>
+        </section>
+        <section class="final container">
+            <p>2023 Copyright © Hikari Estate Co.LTD</p>
+            <p>All Right Reserved.</p>
+        </section>
+    </footer>
+
+
+
+    <!-- Script -->
+    <!-- slide -->
+    <!-- Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+</body>
+
+</html>

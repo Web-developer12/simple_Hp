@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Company</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/common.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/company.css'>
+    <!-- add noto sans font damily -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Zen+Antique&display=swap"
+        rel="stylesheet">
+
+    <!-- add online bootstrap and jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src='main.js'></script> -->
+</head>
+
+<body>
+
+    <header>
+
+        <section id="navbar" class="nav container shadow_box ">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./assets/img/common/Logo.svg" alt="logo" class="logo">
+                </a>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="./index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="./service.html">サービス</a>
+                    </li>
+                    <li>
+                        <a href="./company.html">会社紹介</a>
+                    </li>
+                    <li>
+                        <a href="./buildingList.html">物件一覧</a>
+                    </li>
+                    <button class="blue_btn nav_btn">
+                        <a href="./contact.html">お問い合わせ</a>
+                    </button>
+                </ul>
+            </div>
+            <!-- humburger button -->
+            <span style="font-size:30px;cursor:pointer" id="ham_btn" onclick="openNav()">&#9776;</span>
+            <!-- sp navbar -->
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <div class="topic">
+                        <div class="open">
+                            <h2>
+                                <a href="./index.html">HOME</a>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="open">
+                            <a href="./service.html">サービス</a>
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="open">
+                            <a href="./company.html">会社紹介</a>
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="open">
+                            <a href="./buildingList.html">物件一覧</a>
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="open">
+                            <a href="./contact.html">お問い合わせ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fv container">
+            <h3>
+                モノを作ることが我々の使命だ。
+            </h3>
+            <h4>タイトル</h4>
+        </section>
+
+    </header>
+
+    <main>
+        <section class="hero container">
+            <h3> スタッフ紹介</h3>
+            <div class="hero_main">
+                <div class="hero_main_img">
+                    <img src="./assets/img/company/heroIMG.png" alt="iwamoto">
+                    <h6>代表取締役</h6>
+                    <h4>岩本大輝</h4>
+                </div>
+                <div class="hero_main_txt">
+                    <h6>
+                        昨今近代化が進み時代の流れが変わる中、
+                        不動産業界は現代社会における重要な役割を果たしていますが、
+                        同時にいくつかの社会的課題も抱えています。
+                        <br>
+                        <br>
+                        当社は、不動産の専門家としてこれらの課題に対処し温かいアプローチで解決に向け日々尽力しております。
+                        お客様の不動産にまつわるニーズや希望に共感しお手伝いさせていただいております。
+                        <br>
+                        <br>
+                        家を探す・売る・買う・そして大切に引き継いできた物件の価値を知りたいなど様々な不動産のご要望がございます。
+                        <br>
+                        <br>
+                        市場の最新情報やトレンドを把握し、
+                        最適な条件での取引をサポートするために知識と長いキャリア持つ専門家が全力でお手伝いさせていただきます。
+                        <br>
+                        <br>
+                        不動産市場の健全性と持続可能性を追求し社会的課題への取り組みを通じてより良い未来を築くお手伝いをすることを誇りに思っております。
+                        <br>
+                        <br>
+                        お客様の不動産取引のお手伝いをすることを心より楽しみにしています。
+                    </h6>
+                </div>
+            </div>
+        </section>
+
+        <section class="position">
+            <div class="profile container">
+                <div class="profile_img">
+                    <img src="./assets/img/company/companyMainImg.png" alt="companyMainImg" class="profile_main">
+                    <img src="./assets/img/company/comapnySImg.png" alt="comapnySImg" class="profile_sub">
+                </div>
+                <div class="profile_txt">
+                    <h4>Company Profile</h4>
+                    <h3>会 社 概 要</h3>
+                    <div>
+                        <h5>会　社　名</h5>
+                        <h6>株式会社ミニミニキャッスル</h6>
+                    </div>
+                    <div>
+                        <h5>代表取締役</h5>
+                        <h6>大原　舞</h6>
+                    </div>
+                    <div>
+                        <h5>設　　　立</h5>
+                        <h6>0000年00月</h6>
+                    </div>
+                    <div>
+                        <h5>所　在　地</h5>
+                        <h6>
+                            東京都千代田区丸の内一丁目8番3号 <br>
+                            丸の内トラストタワー本館４F <br>
+                            TEL：03-6826-0107
+                        </h6>
+                    </div>
+                    <div>
+                        <h5>事 業 内 容</h5>
+                        <h6>売買物件の仲介</h6>
+                    </div>
+                    <div>
+                        <h5>営 業 免 許</h5>
+                        <h6>
+                            宅地建物取引業 東京都知事 (0) 0000号
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro">
+            <div class="intro_bg">
+                <div class="intro_main">
+                    <div class="intro_img">
+                        <img src="./assets/img/company/intro_photo.png" alt="Hiraki" class="intro_img">
+                        <div class="abs_pan">
+                            <img src="./assets/img/company/mark.svg" alt="mark" class="mark">
+                            <div class="intro_white_pan">
+                                <p>取締役</p>
+                                <h6>塚原一廣</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro_txt">
+                        <h4>取締役紹介</h4>
+                        <p>
+                            不動産取引は非常に高額なものであり、
+                            ほとんどの方にとって関わることは多くありません。<br> <br>
+                            不動産を売りたい、買いたい、
+                            借りたいどれをとっても同じ物件はございません。<br>
+                            同じようにその人の想い、背景もそれぞれ異なります。<br> <br>
+                            インターネットやAI等の普及により人と人との距離が離れつつある現代だからこそ私たちはお客様1人1人のご縁に感謝し、
+                            不動産だけではなく人生のパートナーとしての不動産屋を目指します。<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="map">
+                <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map"
+                    scrolling="no"
+                    src="https://maps.google.com/maps?q=神奈川県川崎市川崎区京町1丁目3-10千代田ビル102号室&hl=en&output=embed">
+                </iframe>
+            </div>
+        </section>
+
+        <section class="contactus container">
+            <div class="contactus_info">
+                <h4>Contact Us</h4>
+                <div>
+                    <img src="./assets/img/company/location.svg" alt="location">
+                    <h5>神奈川県川崎市川崎区京町1丁目3-10千代田ビル102号室, Japan</h5>
+                </div>
+                <div>
+                    <img src="./assets/img/company/call-calling.svg" alt="call-calling">
+                    <h5>03-6836-3067</h5>
+                </div>
+                <div>
+                    <img src="./assets/img/company/mail.svg" alt="mailaddress">
+                    <h5>admin@hikariestate.io</h5>
+                </div>
+            </div>
+            <div class="contactus_txt">
+                <h6>
+                    不動産取引は非常に高額なものであり、
+                    ほとんどの方にとって関わることは多くありません。<br> <br>
+                    不動産を売りたい、買いたい、借りたいどれをとっても同じ物件はございません。<br> <br>
+                    同じようにその人の想い、背景もそれぞれ異なります。
+                </h6>
+                <a href="./contact.html">
+                    <button class="blue_btn">
+                        ご相談・お問い合わせはこちら
+                    </button>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="footer_nav container">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./assets/img/common/Logo.svg" alt="logo" class="logo">
+                </a>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="./index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="./service.html">サービス</a>
+                    </li>
+                    <li>
+                        <a href="./company.html">会社紹介</a>
+                    </li>
+                    <li>
+                        <a href="./buildingList.html">物件一覧</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="link container">
+            <div class="social">
+                <p>
+                    不動産を売りたい、買いたい、借りたいどれをとっても同じ物件はございません。
+                    同じようにその人の想い、背景もそれぞれ異なります。
+                    インターネットやAI等の普及により人と人との距離が離れつつある現代だからこそ私たちはお客様1人1人のご縁に感謝し、
+                    不動産だけではなく人生のパートナーとしての不動産屋を目指します。
+                </p>
+                <div class="social_link">
+                    <img src="./assets/img/buildingList/twitter.svg" alt="twitter" class="twitter">
+                    <img src="./assets/img/buildingList/instegram.svg" alt="instagram" class="instagram">
+                    <img src="./assets/img/buildingList/facebook.svg" alt="facebook" class="facebook">
+                    <img src="./assets/img/buildingList/youtube.svg" alt="youtube" class="youtube">
+                </div>
+            </div>
+            <div class="contact">
+                <div class="contact_cell">
+                    <img src="./assets/img/buildingList/phonIcon.svg" alt="phoneIcon">
+                    <h6>+123 454564446</h6>
+                </div>
+                <div class="contact_cell">
+                    <img src="./assets/img/buildingList/messageIcon.svg" alt="phoneIcon">
+                    <h6>aaaaa@aaaa.com</h6>
+                </div>
+                <div class="contact_cell">
+                    <img src="./assets/img/buildingList/locationIcon.svg" alt="phoneIcon">
+                    <h6>神奈川県川崎市川崎区京町1丁目3-10千代田ビル102号室</h6>
+                </div>
+            </div>
+        </section>
+        <section class="final container">
+            <p>2023 Copyright © Hikari Estate Co.LTD</p>
+            <p>All Right Reserved.</p>
+        </section>
+    </footer>
+    <script src="./assets/js/common.js"></script>
+
+</body>
+
+</html>

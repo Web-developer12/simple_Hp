@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Building_List</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/common.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/buildingList.css'>
+    <!-- add noto sans font damily -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Zen+Antique&display=swap"
+        rel="stylesheet">
+
+    <!-- add online bootstrap and jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src='main.js'></script> -->
+</head>
+
+<body>
+
+    <header>
+
+        <section id="navbar" class="nav container shadow_box ">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./assets/img/common/Logo.svg" alt="logo" class="logo">
+                </a>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="./index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="./service.html">サービス</a>
+                    </li>
+                    <li>
+                        <a href="./company.html">会社紹介</a>
+                    </li>
+                    <li>
+                        <a href="./buildingList.html">物件一覧</a>
+                    </li>
+                    <button class="blue_btn nav_btn">
+                        <a href="./contact.html">お問い合わせ</a>
+                    </button>
+                </ul>
+            </div>
+            <!-- humburger button -->
+            <span style="font-size:30px;cursor:pointer" id="ham_btn" onclick="openNav()">&#9776;</span>
+            <!-- sp navbar -->
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <div class="topic">
+                        <div class="open">
+                            <h2>
+                                <a href="./index.html">HOME</a>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="open">
+                            <a href="./service.html">サービス</a>
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="open">
+                            <a href="./company.html">会社紹介</a>
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="open">
+                            <a href="./buildingList.html">物件一覧</a>
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="open">
+                            <a href="./contact.html">お問い合わせ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fv container">
+            <div>
+                <div class="fv_txt">
+                    <h3>完璧な物件を見つける簡単な方法</h3>
+                    <h6>
+                        不動産取引は非常に高額なものであり、ほとんどの方にとって関わることは多くありません。<br>
+                        不動産を売りたい、買いたい、借りたいどれをとっても同じ物件はございません。同じようにその人の想い、背景もそれぞれ異なります。
+                    </h6>
+                </div>
+                <div class="fv_img">
+                    <img src="./assets/img/buildingList/fv_img.png" alt="buildingList_top_image">
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+
+        <section class="column container">
+            <div class="ttl">
+                <h3>あなたにおすすめの住宅</h3>
+            </div>
+            <div class="col_main">
+                <div class="col_cell shadow_box">
+                    <a href="./details.html">
+                        <button class="detail_btn">
+                            詳細を見る
+                        </button>
+                    </a>
+                    <img src="./assets/img/buildingList/buid1-1.png" alt="building" class="col_cell_main_img">
+                    <h5>2000000円</h5>
+                    <p>住所住所住所住所住所</p>
+                    <p class="red">本文本文</p>
+                    <div class="col_cell_midi">
+                        <div class="col_cell_midi_bed col_cell_midi_cell">
+                            <div>
+                                <img src="./assets/img/buildingList/mdi_bed.svg" alt="bed">
+                                <h6>3</h6>
+                            </div>
+                            <p>ベッドルーム</p>
+                        </div>
+                        <div class="col_cell_midi_bath col_cell_midi_cell">
+                            <div>
+                                <img src="./assets/img/buildingList/bath.svg" alt="bath">
+                                <h6>4</h6>
+                            </div>
+                            <p>バスルーム</p>
+                        </div>
+                        <div class="col_cell_midi_globe col_cell_midi_cell">
+                            <div>
+                                <img src="./assets/img/buildingList/globe.svg" alt="globe">
+                                <h6>360m</h6>
+                            </div>
+                            <p>家の大きさ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col_cell shadow_box">
+                    <a href="./details.html">
+                        <button class="detail_btn">
+                            詳細を見る
+                        </button>
+                    </a>
+                    <img src="./assets/img/buildingList/build1-2.png" alt="building" class="col_cell_main_img">
+                    <h5>2000000円</h5>
+                    <p>住所住所住所住所住所</p>
+                    <p class="red">本文本文</p>
+                    <div class="col_cell_midi">
+                        <div class="col_cell_midi_bed col_cell_midi_cell">
+                            <div>
+                                <img src="./assets/img/buildingList/mdi_bed.svg" alt="bed">
+                                <h6>3</h6>
+                            </div>
+                            <p>ベッドルーム</p>
+                        </div>
+                        <div class="col_cell_midi_bath col_cell_midi_cell">
+                            <div>
+                                <img src="./assets/img/buildingList/bath.svg" alt="bath">
+                                <h6>4</h6>
+                            </div>
+                            <p>バスルーム</p>
+                        </div>
+                        <div class="col_cell_midi_globe col_cell_midi_cell">
+                            <div>
+                                <img src="./assets/img/buildingList/globe.svg" alt="globe">
+                                <h6>360m</h6>
+                            </div>
+                            <p>家の大きさ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col_cell shadow_box">
+                    <a href="./details.html">
+                        <button class="detail_btn">
+                            詳細を見る
+                        </button>
+                    </a>
+                    <img src="./assets/img/buildingList/build1-3.png" alt="building" class="col_cell_main_img">
+                    <h5>2000000円</h5>
+                    <p>住所住所住所住所住所</p>
+                    <p class="red">本文本文</p>
+                    <div class="col_cell_midi">
+                        <div class="col_cell_midi_bed col_cell_midi_cell">
+                            <div>
+                                <img src="./assets/img/buildingList/mdi_bed.svg" alt="bed">
+                                <h6>3</h6>
+                            </div>
+                            <p>ベッドルーム</p>
+                        </div>
+                        <div class="col_cell_midi_bath col_cell_midi_cell">
+                            <div>
+                                <img src="./assets/img/buildingList/bath.svg" alt="bath">
+                                <h6>4</h6>
+                            </div>
+                            <p>バスルーム</p>
+                        </div>
+                        <div class="col_cell_midi_globe col_cell_midi_cell">
+                            <div>
+                                <img src="./assets/img/buildingList/globe.svg" alt="globe">
+                                <h6>360m</h6>
+                            </div>
+                            <p>家の大きさ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col_cell shadow_box">
+                    <a href="./details.html">
+                        <button class="detail_btn">
+                            詳細を見る
+                        </button>
+                    </a>
+                    <img src="./assets/img/buildingList/build2-1.png" alt="building" class="col_cell_main_img">
+                    <h5>2000000円</h5>
+                    <p>住所住所住所住所住所</p>
+                    <p class="red">本文本文</p>
+                    <div class="col_cell_midi">
+                        <div class="col_cell_midi_bed col_cell_midi_cell">
+                            <div>
+                                <img src="./assets/img/buildingList/mdi_bed.svg" alt="bed">
+                                <h6>3</h6>
+                            </div>
+                            <p>ベッドルーム</p>
+                        </div>
+                        <div class="col_cell_midi_bath col_cell_midi_cell">
+                            <div>
+                                <img src="./assets/img/buildingList/bath.svg" alt="bath">
+                                <h6>4</h6>
+                            </div>
+                            <p>バスルーム</p>
+                        </div>
+                        <div class="col_cell_midi_globe col_cell_midi_cell">
+                            <div>
+                                <img src="./assets/img/buildingList/globe.svg" alt="globe">
+                                <h6>360m</h6>
+                            </div>
+                            <p>家の大きさ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col_cell shadow_box">
+                    <a href="./details.html">
+                        <button class="detail_btn">
+                            詳細を見る
+                        </button>
+                    </a>
+                    <img src="./assets/img/buildingList/build2-2.png" alt="building" class="col_cell_main_img">
+                    <h5>2000000円</h5>
+                    <p>住所住所住所住所住所</p>
+                    <p class="red">本文本文</p>
+                    <div class="col_cell_midi">
+                        <div class="col_cell_midi_bed col_cell_midi_cell">
+                            <div>
+                                <img src="./assets/img/buildingList/mdi_bed.svg" alt="bed">
+                                <h6>3</h6>
+                            </div>
+                            <p>ベッドルーム</p>
+                        </div>
+                        <div class="col_cell_midi_bath col_cell_midi_cell">
+                            <div>
+                                <img src="./assets/img/buildingList/bath.svg" alt="bath">
+                                <h6>4</h6>
+                            </div>
+                            <p>バスルーム</p>
+                        </div>
+                        <div class="col_cell_midi_globe col_cell_midi_cell">
+                            <div>
+                                <img src="./assets/img/buildingList/globe.svg" alt="globe">
+                                <h6>360m</h6>
+                            </div>
+                            <p>家の大きさ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col_cell shadow_box">
+                    <a href="./details.html">
+                        <button class="detail_btn">
+                            詳細を見る
+                        </button>
+                    </a>
+                    <img src="./assets/img/buildingList/build2-3.png" alt="building" class="col_cell_main_img">
+                    <h5>2000000円</h5>
+                    <p>住所住所住所住所住所</p>
+                    <p class="red">本文本文</p>
+                    <div class="col_cell_midi">
+                        <div class="col_cell_midi_bed col_cell_midi_cell">
+                            <div>
+                                <img src="./assets/img/buildingList/mdi_bed.svg" alt="bed">
+                                <h6>3</h6>
+                            </div>
+                            <p>ベッドルーム</p>
+                        </div>
+                        <div class="col_cell_midi_bath col_cell_midi_cell">
+                            <div>
+                                <img src="./assets/img/buildingList/bath.svg" alt="bath">
+                                <h6>4</h6>
+                            </div>
+                            <p>バスルーム</p>
+                        </div>
+                        <div class="col_cell_midi_globe col_cell_midi_cell">
+                            <div>
+                                <img src="./assets/img/buildingList/globe.svg" alt="globe">
+                                <h6>360m</h6>
+                            </div>
+                            <p>家の大きさ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col_cell shadow_box">
+                    <a href="./details.html">
+                        <button class="detail_btn">
+                            詳細を見る
+                        </button>
+                    </a>
+                    <img src="./assets/img/buildingList/build3-1.png" alt="building" class="col_cell_main_img">
+                    <h5>2000000円</h5>
+                    <p>住所住所住所住所住所</p>
+                    <p class="red">本文本文</p>
+                    <div class="col_cell_midi">
+                        <div class="col_cell_midi_bed col_cell_midi_cell">
+                            <div>
+                                <img src="./assets/img/buildingList/mdi_bed.svg" alt="bed">
+                                <h6>3</h6>
+                            </div>
+                            <p>ベッドルーム</p>
+                        </div>
+                        <div class="col_cell_midi_bath col_cell_midi_cell">
+                            <div>
+                                <img src="./assets/img/buildingList/bath.svg" alt="bath">
+                                <h6>4</h6>
+                            </div>
+                            <p>バスルーム</p>
+                        </div>
+                        <div class="col_cell_midi_globe col_cell_midi_cell">
+                            <div>
+                                <img src="./assets/img/buildingList/globe.svg" alt="globe">
+                                <h6>360m</h6>
+                            </div>
+                            <p>家の大きさ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col_cell shadow_box">
+                    <a href="./details.html">
+                        <button class="detail_btn">
+                            詳細を見る
+                        </button>
+                    </a>
+                    <img src="./assets/img/buildingList/build3-2.png" alt="building" class="col_cell_main_img">
+                    <h5>2000000円</h5>
+                    <p>住所住所住所住所住所</p>
+                    <p class="red">本文本文</p>
+                    <div class="col_cell_midi">
+                        <div class="col_cell_midi_bed col_cell_midi_cell">
+                            <div>
+                                <img src="./assets/img/buildingList/mdi_bed.svg" alt="bed">
+                                <h6>3</h6>
+                            </div>
+                            <p>ベッドルーム</p>
+                        </div>
+                        <div class="col_cell_midi_bath col_cell_midi_cell">
+                            <div>
+                                <img src="./assets/img/buildingList/bath.svg" alt="bath">
+                                <h6>4</h6>
+                            </div>
+                            <p>バスルーム</p>
+                        </div>
+                        <div class="col_cell_midi_globe col_cell_midi_cell">
+                            <div>
+                                <img src="./assets/img/buildingList/globe.svg" alt="globe">
+                                <h6>360m</h6>
+                            </div>
+                            <p>家の大きさ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col_cell shadow_box">
+                    <a href="./details.html">
+                        <button class="detail_btn">
+                            詳細を見る
+                        </button>
+                    </a>
+                    <img src="./assets/img/buildingList/build3-3.png" alt="building" class="col_cell_main_img">
+                    <h5>2000000円</h5>
+                    <p>住所住所住所住所住所</p>
+                    <p class="red">本文本文</p>
+                    <div class="col_cell_midi">
+                        <div class="col_cell_midi_bed col_cell_midi_cell">
+                            <div>
+                                <img src="./assets/img/buildingList/mdi_bed.svg" alt="bed">
+                                <h6>3</h6>
+                            </div>
+                            <p>ベッドルーム</p>
+                        </div>
+                        <div class="col_cell_midi_bath col_cell_midi_cell">
+                            <div>
+                                <img src="./assets/img/buildingList/bath.svg" alt="bath">
+                                <h6>4</h6>
+                            </div>
+                            <p>バスルーム</p>
+                        </div>
+                        <div class="col_cell_midi_globe col_cell_midi_cell">
+                            <div>
+                                <img src="./assets/img/buildingList/globe.svg" alt="globe">
+                                <h6>360m</h6>
+                            </div>
+                            <p>家の大きさ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about container">
+            <div class="about_img">
+                <img src="./assets/img/buildingList/decoIcon.svg" alt="decorationIcon" class="dec_icon">
+                <img src="./assets/img/buildingList/starIcon.svg" alt="starIcon" class="star_icon">
+            </div>
+            <div class="about_txt">
+                <img src="./assets/img/buildingList/About.svg" alt="about">
+                <h4>
+                    私たちは、すべての人に
+                    最高の不動産物件を提供しています。
+                </h4>
+                <div class="about_txt_k">
+                    <div>
+                        <img src="./assets/img/buildingList/peopleIcon.svg" alt="peopleGroupIcon" class="grp_icon">
+                        <div>
+                            <h3>5K</h3>
+                            <p>満足なお客様</p>
+                        </div>
+                    </div>
+                    <div class="about_txt_3k">
+                        <img src="./assets/img/buildingList/peopleGrp.png" alt="grp_img">
+                        <div class="">
+                            <p>3K</p>
+                            <p>+ ポジティブなレビュー</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="./contact.html">
+                    <button class="blue_btn">
+                        お問い合わせ
+                    </button>
+                </a>
+            </div>
+        </section>
+
+        <section class="intro container">
+            <img src="./assets/img/buildingList/hero.png" alt="hero">
+            <div>
+                <h4>不動産エージェントになる</h4>
+                <p>アンケートのために、世界のトップ企業とのみ協力します。</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer_nav container">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./assets/img/common/Logo.svg" alt="logo" class="logo">
+                </a>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="./index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="./service.html">サービス</a>
+                    </li>
+                    <li>
+                        <a href="./company.html">会社紹介</a>
+                    </li>
+                    <li>
+                        <a href="./buildingList.html">物件一覧</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="link container">
+            <div class="social">
+                <p>
+                    不動産を売りたい、買いたい、借りたいどれをとっても同じ物件はございません。
+                    同じようにその人の想い、背景もそれぞれ異なります。
+                    インターネットやAI等の普及により人と人との距離が離れつつある現代だからこそ私たちはお客様1人1人のご縁に感謝し、
+                    不動産だけではなく人生のパートナーとしての不動産屋を目指します。
+                </p>
+                <div class="social_link">
+                    <img src="./assets/img/buildingList/twitter.svg" alt="twitter" class="twitter">
+                    <img src="./assets/img/buildingList/instegram.svg" alt="instagram" class="instagram">
+                    <img src="./assets/img/buildingList/facebook.svg" alt="facebook" class="facebook">
+                    <img src="./assets/img/buildingList/youtube.svg" alt="youtube" class="youtube">
+                </div>
+            </div>
+            <div class="contact">
+                <div class="contact_cell">
+                    <img src="./assets/img/buildingList/phonIcon.svg" alt="phoneIcon">
+                    <h6>+123 454564446</h6>
+                </div>
+                <div class="contact_cell">
+                    <img src="./assets/img/buildingList/messageIcon.svg" alt="phoneIcon">
+                    <h6>aaaaa@aaaa.com</h6>
+                </div>
+                <div class="contact_cell">
+                    <img src="./assets/img/buildingList/locationIcon.svg" alt="phoneIcon">
+                    <h6>神奈川県川崎市川崎区京町1丁目3-10千代田ビル102号室</h6>
+                </div>
+            </div>
+        </section>
+        <section class="final container">
+            <p>2023 Copyright © Hikari Estate Co.LTD</p>
+            <p>All Right Reserved.</p>
+        </section>
+    </footer>
+    <script src="./assets/js/common.js"></script>
+
+</body>
+
+</html>

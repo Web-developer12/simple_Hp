@@ -1,0 +1,433 @@
+/*  ANIMATION SETTING */
+
+/* navbar hide */
+
+#navbar {
+    transition: top 0.3s;
+}
+/* --------------------  root setting  -------------------- */
+
+:root {
+    --black: #222222;
+    --grey: #8e8e8e;
+    --blue: #3A8BEA;
+    --yellow: #FEF4BD;
+    --green: #E4FFDD;
+    --cyan: #CFF3FF;
+    --pink: #FFE0E2;
+    --gray: #F5F5F5;
+    --white: #ffffff;
+}
+
+/* -------------------  font setting  -------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: var(--black);
+}
+
+h1 {
+    font-size: 72rem;
+}
+
+h2 {
+    font-size: 56rem;
+}
+
+h3 {
+    font-size: 40rem;
+}
+
+h4 {
+    font-size: 32rem;
+}
+
+h5 {
+    font-size: 24rem;
+}
+
+h6 {
+    font-size: 20rem;
+    font-weight: 500;
+}
+
+p {
+    font-size: 16rem;
+}
+
+/* -------------------  basic style  ----------------------- */
+
+html,
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: calc(100vw/1920);
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container, .container1 {
+    padding-left: 143rem;
+    padding-right: 143rem;
+}
+/* container for more inline padding */
+/* .container2 {
+    padding-left: 100rem;
+    padding-right: 100rem;
+} */
+
+/* hamburger btn part */
+.service_drpdwn img:hover {
+    scale: 1.1;
+    transition: 0.4s;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255 255 255);
+    background-color: rgba(255, 255, 255);
+    overflow-x: hidden !important;
+    transition: 0.5s;
+    opacity: 95%;
+}
+
+.overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.overlay a {
+    padding: 14px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #222222;
+    display: block;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #777676;
+    transition: 0.3s;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 12rem;
+    right: 54rem;
+    font-size: 40rem;
+}
+
+/* @media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40rem;
+        top: 15rem;
+        right: 35rem;
+    }
+} */
+
+#ham_btn {
+    display: none;
+}
+
+@media (max-width:768px) {
+    #ham_btn {
+        display: block;
+    }
+
+    .navbar {
+        opacity: 100% !important;
+    }
+}
+
+@media (max-width:425px) {
+    .overlay .closebtn {
+        position: absolute;
+        top: 19rem;
+        right: 18rem;
+        font-size: 32rem;
+    }
+}
+
+
+/* -------------------  FUE part (Frequently Use Part) ----------------------- */
+
+.blue_pan {
+    background-color: var(--blue);
+}
+.yellow_pan {
+    background-color: var(--yellow);
+}
+.green_pan {
+    background-color: var(--green);
+}
+.cyan_pan {
+    background-color: var(--cyan);
+}
+.pink_pan {
+    background-color: var(--pink);
+}
+
+.blue_pan h3,
+.blue_pan h4,
+.blue_pan h5,
+.blue_pan h6,
+.blue_pan p {
+    color: var(--white);
+}
+
+.blue_btn {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 12rem 28rem 12rem 28rem;
+    border: none;
+    font-size: 20rem;
+}
+
+.blue_btn:hover {
+    background-color: #155bac;
+    /* font-weight: bold; */
+}
+
+
+.shadow_box {
+    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+/* -------------------  header part  ----------------------- */
+
+.nav {
+    top: 18rem;
+    margin-left: 32rem;
+    margin-right: 32rem;
+    width: 97%;
+    height: 82rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12rem;
+    z-index: 10;
+    position: fixed;
+    background-color: var(--white);
+}
+
+.logo {
+    width: 180rem;
+    height: 82rem;
+}
+
+.navbar a {
+    font-size: 20rem;
+    font-weight: normal;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.navbar li:hover {
+    border-bottom: 1px solid #777676;
+    transition: 0.1s linear;
+}
+
+.navbar a:hover {
+    color: #777676;
+}
+
+.navbar ul {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    gap: 40rem;
+    margin-top: 3rem;
+}
+
+.nav_btn {
+    padding: 5rem 11rem 5rem 11rem;
+    border-radius: 12rem;
+}
+
+.nav_btn a {
+    color: var(--white);
+}
+
+.nav_btn a:hover {
+    color: var(--white);
+}
+
+/* -------------------  footer part  ----------------------- */
+.footer_nav {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-right: 45rem;
+}
+
+footer {
+    padding-top: 29rem;
+}
+
+.link {
+    margin-top: 72rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40rem;
+}
+
+.social {
+    width: 626rem;
+}
+
+.social_link {
+    margin-top: 48rem;
+    padding-bottom: 20rem;
+    border-bottom: 1px solid var(--black);
+}
+
+.social_link img {
+    margin-right: 15rem;
+    cursor: pointer;
+}
+
+.twitter {
+    width: 30rem;
+    height: 28rem;
+}
+
+.instagram {
+    width: 30rem;
+    height: 30rem;
+}
+
+.facebook {
+    width: 30rem;
+    height: 30rem;
+}
+
+.youtube {
+    width: 40rem;
+    height: 27rem;
+}
+
+.contact {
+    width: 520rem;
+    display: flex;
+    flex-direction: column;
+    gap: 28rem;
+}
+
+.contact_cell {
+    display: flex;
+    gap: 15rem;
+    align-items: center;
+}
+
+.contact_cell img {
+    width: 36rem;
+    height: 36rem;
+}
+
+.final {
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    padding-top: 30rem;
+    padding-bottom: 30rem;
+    gap: 12rem;
+}
+
+.final p {
+    color: var(--white);
+    font-weight: normal;
+}
+
+/* -------------------  responsive part  ----------------------- */
+
+@media (max-width:768px) {
+
+    html,
+    * {
+        font-size: calc(100vw/768);
+    }
+
+    .container {
+        padding-left: 42rem;
+        padding-right: 42rem;
+    }
+
+    .nav {
+        width: 91.5%;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    h3 {
+        font-size: 32rem;
+    }
+
+    .link {
+        flex-direction: column;
+        gap: 32rem;
+        margin-left: 32rem;
+    }
+}
+
+
+@media (max-width:425px) {
+
+    html,
+    * {
+        font-size: calc(100vw/425);
+    }
+
+    .container {
+        padding-left: 28rem;
+        padding-right: 28rem;
+    }
+
+    .nav {
+        width: 96.5%;
+    }
+
+    .contact {
+        width: 322rem;
+    }
+
+    .social {
+        width: 323rem;
+    }
+
+    .final {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        margin-left: 8rem;
+        margin-right: 0;
+    }
+
+}

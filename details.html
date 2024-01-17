@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Details</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/common.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/details.css'>
+    <!-- add noto sans font damily -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Zen+Antique&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2.2.1/dist/flickity.pkgd.min.js"></script>
+
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='./assets/style/slidestyle(btn).css'> -->
+    <!-- AOS part -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono:700"> -->
+
+    <!-- add online bootstrap and jQuery -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <!-- <script src='main.js'></script> -->
+</head>
+
+<body>
+
+    <header>
+
+        <section id="navbar" class="nav container shadow_box ">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./assets/img/common/Logo.svg" alt="logo" class="logo">
+                </a>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="./index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="./service.html">サービス</a>
+                    </li>
+                    <li>
+                        <a href="./company.html">会社紹介</a>
+                    </li>
+                    <li>
+                        <a href="./buildingList.html">物件一覧</a>
+                    </li>
+                    <button class="blue_btn nav_btn">
+                        <a href="./contact.html">お問い合わせ</a>
+                    </button>
+                </ul>
+            </div>
+            <!-- humburger button -->
+            <span style="font-size:30px;cursor:pointer" id="ham_btn" onclick="openNav()">&#9776;</span>
+            <!-- sp navbar -->
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <div class="topic">
+                        <div class="open">
+                            <h2>
+                                <a href="./index.html">HOME</a>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="open">
+                            <a href="./service.html">サービス</a>
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="open">
+                            <a href="./company.html">会社紹介</a>
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="open">
+                            <a href="./buildingList.html">物件一覧</a>
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="open">
+                            <a href="./contact.html">お問い合わせ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fv container">
+            <h3>
+                Our Rooms
+            </h3>
+        </section>
+
+    </header>
+
+    <main>
+
+        <section class="room container">
+            <h3>物件名物件名物件名物件名</h3>
+            <div class="room_pan">
+                <div class="room_pan_main">
+                    <img src="./assets/img/details/houseMain.png" alt="mainRoomimage">
+                    <h5>パークコート麻布十番ザ・タワー</h5>
+                    <p>
+                        テキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキスト
+                    </p>
+                    <a href="./contact.html">
+                        <button class="blue_btn">
+                            購入する
+                        </button>
+                    </a>
+                </div>
+                <div class="room_pan_right">
+                    <div class="room_right_grp">
+                        <div class="s_cell room_border">
+                            <img src="./assets/img/details/house1.png" alt="roomset">
+                            <h5>タイトル</h5>
+                            <p>
+                                テキストテキストテキストテキスト
+                                テキストテキストテキストテキスト
+                            </p>
+                        </div>
+                        <div class="s_cell room_border">
+                            <img src="./assets/img/details/house2.png" alt="roomset">
+                            <h5>タイトル</h5>
+                            <p>
+                                テキストテキストテキストテキスト
+                                テキストテキストテキストテキスト
+                            </p>
+                        </div>
+                    </div>
+                    <div class="room_right_grp">
+                        <div class="s_cell room_border">
+                            <img src="./assets/img/details/house3.png" alt="roomset">
+                            <h5>タイトル</h5>
+                            <p>
+                                テキストテキストテキストテキスト
+                                テキストテキストテキストテキスト
+                            </p>
+                        </div>
+                        <div class="s_cell room_border">
+                            <img src="./assets/img/details/house4.png" alt="roomset">
+                            <h5>タイトル</h5>
+                            <p>
+                                テキストテキストテキストテキスト
+                                テキストテキストテキストテキスト
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="slide">
+            <h3 class="container">ギャラリー</h3>
+            <div class="port-highlights slideshow js-slideshow">
+                <div class="gallery_cell">
+                    <img src="./assets/img/details/Image2.png" alt="sldieimage">
+                    <div class="gallery_link">
+                        <div>
+                            <div>
+                                <h5>建物名</h5>
+                                <p>本文本文本文本文本文本文</p>
+                            </div>
+                            <a href="">
+                                <img src="./assets/img/index/Arrow 1.svg" alt="gallery_arrow">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery_cell">
+                    <img src="./assets/img/details/Image3.png" alt="sldieimage">
+                    <div class="gallery_link">
+                        <div>
+                            <div>
+                                <h5>建物名</h5>
+                                <p>本文本文本文本文本文本文</p>
+                            </div>
+                            <a href="">
+                                <img src="./assets/img/index/Arrow 1.svg" alt="gallery_arrow">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery_cell">
+                    <img src="./assets/img/details/Image4.png" alt="sldieimage">
+                    <div class="gallery_link">
+                        <div>
+                            <div>
+                                <h5>建物名</h5>
+                                <p>本文本文本文本文本文本文</p>
+                            </div>
+                            <a href="">
+                                <img src="./assets/img/index/Arrow 1.svg" alt="gallery_arrow">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery_cell">
+                    <img src="./assets/img/details/Image2.png" alt="sldieimage">
+                    <div class="gallery_link">
+                        <div>
+                            <div>
+                                <h5>建物名</h5>
+                                <p>本文本文本文本文本文本文</p>
+                            </div>
+                            <a href="">
+                                <img src="./assets/img/index/Arrow 1.svg" alt="gallery_arrow">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery_cell">
+                    <img src="./assets/img/details/Image3.png" alt="sldieimage">
+                    <div class="gallery_link">
+                        <div>
+                            <div>
+                                <h5>建物名</h5>
+                                <p>本文本文本文本文本文本文</p>
+                            </div>
+                            <a href="">
+                                <img src="./assets/img/index/Arrow 1.svg" alt="gallery_arrow">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery_cell">
+                    <img src="./assets/img/details/Image4.png" alt="sldieimage">
+                    <div class="gallery_link">
+                        <div>
+                            <div>
+                                <h5>建物名</h5>
+                                <p>本文本文本文本文本文本文</p>
+                            </div>
+                            <a href="">
+                                <img src="./assets/img/index/Arrow 1.svg" alt="gallery_arrow">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news_btn_pan">
+                <div></div>
+                <a href="./buildingList.html">
+                    <button class="blue_btn">すべて見る...</button>
+                </a>
+            </div>
+        </section>
+
+        <section class="contactus container">
+            <div class="contactus_info">
+                <h4>Contact Us</h4>
+                <div>
+                    <img src="./assets/img/company/location.svg" alt="location">
+                    <h5>神奈川県川崎市川崎区京町1丁目3-10千代田ビル102号室, Japan</h5>
+                </div>
+                <div>
+                    <img src="./assets/img/company/call-calling.svg" alt="call-calling">
+                    <h5>03-6836-3067</h5>
+                </div>
+                <div>
+                    <img src="./assets/img/company/mail.svg" alt="mailaddress">
+                    <h5>admin@hikariestate.io</h5>
+                </div>
+            </div>
+            <div class="contactus_txt">
+                <h6>
+                    不動産取引は非常に高額なものであり、
+                    ほとんどの方にとって関わることは多くありません。<br> <br>
+                    不動産を売りたい、買いたい、借りたいどれをとっても同じ物件はございません。<br> <br>
+                    同じようにその人の想い、背景もそれぞれ異なります。
+                </h6>
+                <a href="./contact.html">
+                    <button class="blue_btn">
+                        ご相談・お問い合わせはこちら
+                    </button>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="footer_nav container">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./assets/img/common/Logo.svg" alt="logo" class="logo">
+                </a>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="./index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="./service.html">サービス</a>
+                    </li>
+                    <li>
+                        <a href="./company.html">会社紹介</a>
+                    </li>
+                    <li>
+                        <a href="./buildingList.html">物件一覧</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="link container">
+            <div class="social">
+                <p>
+                    不動産を売りたい、買いたい、借りたいどれをとっても同じ物件はございません。
+                    同じようにその人の想い、背景もそれぞれ異なります。
+                    インターネットやAI等の普及により人と人との距離が離れつつある現代だからこそ私たちはお客様1人1人のご縁に感謝し、
+                    不動産だけではなく人生のパートナーとしての不動産屋を目指します。
+                </p>
+                <div class="social_link">
+                    <img src="./assets/img/buildingList/twitter.svg" alt="twitter" class="twitter">
+                    <img src="./assets/img/buildingList/instegram.svg" alt="instagram" class="instagram">
+                    <img src="./assets/img/buildingList/facebook.svg" alt="facebook" class="facebook">
+                    <img src="./assets/img/buildingList/youtube.svg" alt="youtube" class="youtube">
+                </div>
+            </div>
+            <div class="contact">
+                <div class="contact_cell">
+                    <img src="./assets/img/buildingList/phonIcon.svg" alt="phoneIcon">
+                    <h6>+123 454564446</h6>
+                </div>
+                <div class="contact_cell">
+                    <img src="./assets/img/buildingList/messageIcon.svg" alt="phoneIcon">
+                    <h6>aaaaa@aaaa.com</h6>
+                </div>
+                <div class="contact_cell">
+                    <img src="./assets/img/buildingList/locationIcon.svg" alt="phoneIcon">
+                    <h6>神奈川県川崎市川崎区京町1丁目3-10千代田ビル102号室</h6>
+                </div>
+            </div>
+        </section>
+        <section class="final container">
+            <p>2023 Copyright © Hikari Estate Co.LTD</p>
+            <p>All Right Reserved.</p>
+        </section>
+    </footer>
+    <script src="./assets/js/common.js"></script> <!-- button slide -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <!-- <script src="./assets/js/slide(btn).js"></script> -->
+    <script src="./assets/js/flowSlide.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Top</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/common.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/index.css'>
+    <!-- add noto sans font damily -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Zen+Antique&display=swap"
+        rel="stylesheet">
+
+    <!-- add online bootstrap and jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src='main.js'></script> -->
+</head>
+
+<body>
+
+    <header>
+
+        <section id="navbar" class="nav container shadow_box ">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./assets/img/common/Logo.svg" alt="logo" class="logo">
+                </a>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="./index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="./service.html">サービス</a>
+                    </li>
+                    <li>
+                        <a href="./company.html">会社紹介</a>
+                    </li>
+                    <li>
+                        <a href="./buildingList.html">物件一覧</a>
+                    </li>
+                    <button class="blue_btn nav_btn">
+                        <a href="./contact.html">お問い合わせ</a>
+                    </button>
+                </ul>
+            </div>
+            <!-- humburger button -->
+            <span style="font-size:30px;cursor:pointer" id="ham_btn" onclick="openNav()">&#9776;</span>
+            <!-- sp navbar -->
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <div class="topic">
+                        <div class="open">
+                            <h2>
+                                <a href="./index.html">HOME</a>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="open">
+                            <a href="./service.html">サービス</a>
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="open">
+                            <a href="./company.html">会社紹介</a>
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="open">
+                            <a href="./buildingList.html">物件一覧</a>
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="open">
+                            <a href="./contact.html">お問い合わせ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fv container">
+            <h2 class="text_shadow">
+                ヘディング
+            </h2>
+            <h6 class="text_shadow">
+                当社が施工したビル・住宅プロジェクトは100件以上。<br>
+                ビルのオーナーは、他の業者ではなく私たちを選びました。<br>
+                なぜなら私たちの仕事は
+            </h6>
+            <a href="./contact.html">
+                <button class="linear_btn">
+                    ご相談・お問い合わせはこちら
+                </button>
+            </a>
+            <!-- <div class="fv_grp"> -->
+            <div class="fv_grp_left">
+                <div class="fv_grp_left_cell">
+                    <div>
+                        <h4>300 </h4>
+                        <h4 class="blue_txt"> +</h4>
+                    </div>
+                    <h6>
+                        ハッピー <br>
+                        クライアント
+                    </h6>
+                </div>
+                <div class="fv_grp_left_cell">
+                    <div>
+                        <h4>900</h4>
+                        <h4 class="blue_txt">+</h4>
+                    </div>
+                    <h6>
+                        アメージング <br>
+                        プロジェクト
+                    </h6>
+                </div>
+                <div class="fv_grp_left_cell">
+                    <div>
+                        <h4>20</h4>
+                        <h4 class="blue_txt">+</h4>
+                    </div>
+                    <h6>
+                        受賞歴
+                    </h6>
+                </div>
+            </div>
+            <div class="fv_grp_right linear_btn">
+                <h4>今お問い合わせください</h4>
+                <div>
+                    <img src="./assets/img/company/location.svg" alt="icon">
+                    <h6>神奈川県川崎市川崎区京町1丁目3-10千代田ビル102号室</h6>
+                </div>
+                <div>
+                    <img src="./assets/img/company/call-calling.svg" alt="icon">
+                    <h6>0123-456-789</h6>
+                </div>
+                <div>
+                    <img src="./assets/img/company/mail.svg" alt="icon">
+                    <h6>aaaaa@aaaa.com</h6>
+                </div>
+            </div>
+            <!-- </div> -->
+        </section>
+
+    </header>
+
+    <main>
+
+        <section class="banner container">
+            <img src="./assets/img/index/banner1.png" alt="banner" class="banner1">
+            <img src="./assets/img/index/banner2.png" alt="banner" class="banner2">
+            <img src="./assets/img/index/banner3.png" alt="banner" class="banner3">
+            <img src="./assets/img/index/banner4.png" alt="banner" class="banner4">
+        </section>
+
+        <section class="service container">
+            <h3>サービス</h3>
+            <p>
+                私たちのサービスをご利用になりたい方は、 <br>
+                メールまたはカスタマーサービスまでお問い合わせください。
+            </p>
+            <div class="service_grp">
+                <div class="service_cell">
+                    <img src="./assets/img/index/service1 (1).png" alt="service" class=" shadow_box">
+                    <h5>売買事業</h5>
+                    <p>
+                        土地、戸建て、マンション、一棟の売却・購入のサポートを致します。
+                    </p>
+                </div>
+                <div class="service_cell">
+                    <img src="./assets/img/index/service2 (1).png" alt="service" class=" shadow_box">
+                    <h5>相続関連事業</h5>
+                    <p>
+                        相続に関わる全てのご相談に対して専門の士業と共にサポート致します。
+                    </p>
+                </div>
+                <div class="service_cell">
+                    <img src="./assets/img/index/service3 (1).png" alt="service" class=" shadow_box">
+                    <h5>その他コンサル事業</h5>
+                    <p>
+                        家屋解体を始め残置物撤去など様々な分野の問題を各業界のプロがサポート致します。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="color container">
+            <h3>川崎エリアを中心に展開する <br>
+                賃貸と売買のトータルマネジメント</h3>
+            <div class="color_grp">
+                <div class="color_cell yellow_pan">
+                    <div class="">
+                        <img src="./assets/img/service/vector1.svg" alt="vector1">
+                        <h5>経験豊富</h5>
+                    </div>
+                    <p>
+                        弊社は業界経験が長い不動産プランナーがお客様のご要望に合うご提案をしご相談からご契約まで専任担当制でご対応をさせていただいております
+                    </p>
+                </div>
+                <div class="color_cell green_pan">
+                    <div class="">
+                        <img src="./assets/img/service/vector2.svg" alt="vector">
+                        <h5>価格の実績</h5>
+                    </div>
+                    <p>
+                        昨今不動産の価格が安定しない中で市場の流れを読み取り、他社では届かない価格のご提案ができるようプランを考えております。安心のご成約率92%
+                    </p>
+                </div>
+            </div>
+            <div class="color_grp">
+                <div class="color_cell cyan_pan">
+                    <div class="">
+                        <img src="./assets/img/service/vector3.svg" alt="vector1">
+                        <h5>他社にはできない
+                            オンリーワン</h5>
+                    </div>
+                    <p>
+                        残置物撤去・リフォーム・家屋解体コンサルに至るまでグループ会社にて施工が可能な為、売却までにかかる費用の大幅カットができる事から最終的な売却価格の高値を実現しお客様から喜ばれるご提案ができております。
+                    </p>
+                </div>
+                <div class="color_cell pink_pan">
+                    <div class="">
+                        <img src="./assets/img/service/vector3 (1).svg" alt="vector1">
+                        <h5>最高品質の
+                            サービスをご提供</h5>
+                    </div>
+                    <p>
+                        グループ会社（遺品整理・特殊清掃・残置物整理・リフォーム・家屋解体事業）で行っておりますサービスに関しましても取り組みや業界初のサービスを展開しており数々のメディア実績を持っております。グループ会社の顧客満足度調査では98%を獲得しております。
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="overview container">
+            <h3>会社概要</h3>
+            <div class="overview_pan">
+                <div class="overview_img">
+                    <img src="./assets/img/index/companybg.png" alt="overviewBg">
+                    <div>
+                        <img src="./assets/img/index/iwamoto.png" alt="iwamoto">
+                        <h5>代表取締役</h5>
+                        <h4>岩本大輝</h4>
+                        <p>
+                            建築分野で20年以上の経験を持ち、<br>
+                            最大100以上のプロジェクトに携わる。
+                        </p>
+                    </div>
+                </div>
+                <div class="overview_txt">
+                    <h4>タイトル</h4>
+                    <h6>
+                        私たちのすべてのチームは、<br><br>
+                        それぞれの分野でプロフェッショナルで有能であり、<br><br>
+                        優れた結果であなたの夢の建物を実現するお手伝いをします。
+                    </h6>
+                    <a href="./company.html">
+                        <button class="blue_btn">詳しくはこちら</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="news container">
+            <h3>ニュース＆最新情報</h3>
+            <div class="news_grp">
+                <div class="news_cell">
+                    <h5>2023.10.25</h5>
+                    <img src="./assets/img/index/news.png" alt="news">
+                    <h5>本文本文本文本文本文本文 <br> 本文本文本文本文本文本文</h5>
+                    <p>
+                        本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+                    </p>
+                    <a href="">...... もっと読む</a>
+                </div>
+                <div class="news_cell">
+                    <h5>2023.10.25</h5>
+                    <img src="./assets/img/index/news.png" alt="news">
+                    <h5>本文本文本文本文本文本文 <br> 本文本文本文本文本文本文</h5>
+                    <p>
+                        本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+                    </p>
+                    <a href="">...... もっと読む</a>
+                </div>
+                <div class="news_cell">
+                    <h5>2023.10.25</h5>
+                    <img src="./assets/img/index/news.png" alt="news">
+                    <h5>本文本文本文本文本文本文 <br> 本文本文本文本文本文本文</h5>
+                    <p>
+                        本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+                    </p>
+                    <a href="">...... もっと読む</a>
+                </div>
+            </div>
+            <div class="news_btn_pan">
+                <div></div>
+                <button class="blue_btn">すべて見る...</button>
+            </div>
+        </section>
+
+        <section class="gallery container">
+            <h3>ギャラリー</h3>
+            <div>
+                <div class="gallery_cell">
+                    <img src="./assets/img/index/gallery1.png" alt="gallery">
+                    <div class="gallery_link">
+                        <div>
+                            <div>
+                                <h5>建物名</h5>
+                                <p>本文本文本文本文本文本文</p>
+                            </div>
+                            <a href="./details.html">
+                                <img src="./assets/img/index/Arrow 1.svg" alt="gallery_arrow">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery_cell">
+                    <img src="./assets/img/index/gallery2.png" alt="gallery">
+                    <div class="gallery_link">
+                        <div>
+                            <div>
+                                <h5>建物名</h5>
+                                <p>本文本文本文本文本文本文</p>
+                            </div>
+                            <a href="./details.html">
+                                <img src="./assets/img/index/Arrow 1.svg" alt="gallery_arrow">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery_cell">
+                    <img src="./assets/img/index/gallery3.png" alt="gallery">
+                    <div class="gallery_link">
+                        <div>
+                            <div>
+                                <h5>建物名</h5>
+                                <p>本文本文本文本文本文本文</p>
+                            </div>
+                            <a href="./details.html">
+                                <img src="./assets/img/index/Arrow 1.svg" alt="gallery_arrow">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery_cell">
+                    <img src="./assets/img/index/gallery4.png" alt="gallery">
+                    <div class="gallery_link">
+                        <div>
+                            <div>
+                                <h5>建物名</h5>
+                                <p>本文本文本文本文本文本文</p>
+                            </div>
+                            <a href="./details.html">
+                                <img src="./assets/img/index/Arrow 1.svg" alt="gallery_arrow">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news_btn_pan gallery_btn_pan">
+                <div></div>
+                <a href="./buildingList.html">
+                    <button class="blue_btn">すべて見る...</button>
+                </a>
+            </div>
+        </section>
+
+        <section class="contactus container">
+            <div class="contactus_txt">
+                <h3>卓越した品質の無料カウンセリング</h3>
+            </div>
+            <div class="contactus_info">
+                <div>
+                    <img src="./assets/img/company/call-calling.svg" alt="call-calling">
+                    <h5>025-777-3067</h5>
+                </div>
+                <div>
+                    <img src="./assets/img/company/mail.svg" alt="mailaddress">
+                    <h5>admin@thehomeverse.io</h5>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="footer_nav container">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./assets/img/common/Logo.svg" alt="logo" class="logo">
+                </a>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="./index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="./service.html">サービス</a>
+                    </li>
+                    <li>
+                        <a href="./company.html">会社紹介</a>
+                    </li>
+                    <li>
+                        <a href="./buildingList.html">物件一覧</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="link container">
+            <div class="social">
+                <p>
+                    不動産を売りたい、買いたい、借りたいどれをとっても同じ物件はございません。
+                    同じようにその人の想い、背景もそれぞれ異なります。
+                    インターネットやAI等の普及により人と人との距離が離れつつある現代だからこそ私たちはお客様1人1人のご縁に感謝し、
+                    不動産だけではなく人生のパートナーとしての不動産屋を目指します。
+                </p>
+                <div class="social_link">
+                    <img src="./assets/img/buildingList/twitter.svg" alt="twitter" class="twitter">
+                    <img src="./assets/img/buildingList/instegram.svg" alt="instagram" class="instagram">
+                    <img src="./assets/img/buildingList/facebook.svg" alt="facebook" class="facebook">
+                    <img src="./assets/img/buildingList/youtube.svg" alt="youtube" class="youtube">
+                </div>
+            </div>
+            <div class="contact">
+                <div class="contact_cell">
+                    <img src="./assets/img/buildingList/phonIcon.svg" alt="phoneIcon">
+                    <h6>+123 454564446</h6>
+                </div>
+                <div class="contact_cell">
+                    <img src="./assets/img/buildingList/messageIcon.svg" alt="phoneIcon">
+                    <h6>aaaaa@aaaa.com</h6>
+                </div>
+                <div class="contact_cell">
+                    <img src="./assets/img/buildingList/locationIcon.svg" alt="phoneIcon">
+                    <h6>神奈川県川崎市川崎区京町1丁目3-10千代田ビル102号室</h6>
+                </div>
+            </div>
+        </section>
+        <section class="final container">
+            <p>2023 Copyright © Hikari Estate Co.LTD</p>
+            <p>All Right Reserved.</p>
+        </section>
+    </footer>
+        <!-- Styles -->
+        <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
+        <!-- Script -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js"></script>
+    <script src="./assets/js/flowSlide.js"></script>
+    <script src="./assets/js/common.js"></script>
+</body>
+
+</html>
